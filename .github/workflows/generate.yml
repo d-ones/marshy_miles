@@ -1,8 +1,7 @@
-name: generate words
+name: generate map
 
 on:
   repository_dispatch:
-    types: [zapier-triggered]
   workflow_dispatch:
 
 jobs:
