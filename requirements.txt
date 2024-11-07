@@ -1,2 +1,4 @@
 folium==0.18.0
 requests==2.25.1
+branca==0.6.0
+urllib3==1.26.5
