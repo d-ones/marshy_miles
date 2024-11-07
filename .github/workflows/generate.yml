@@ -27,11 +27,6 @@ jobs:
         env:
           auth_url: ${{ secrets.AUTH_URL }}
           activities_url: ${{ secrets.ACTIVITIES_URL }}
-          payload: |
-            {
-                "client_id": "${{ secrets.CLIENT_ID }}",
-                "client_secret": "${{ secrets.CLIENT_SECRET }}",
-                "refresh_token": "${{ secrets.REFRESH_TOKEN }}",
-                "grant_type": "refresh_token",
-                "f": "json",
-            }
+          client_id: "${{ secrets.CLIENT_ID }}"
+          client_secret: "${{ secrets.CLIENT_SECRET }}"
+          refresh_token: "${{ secrets.REFRESH_TOKEN }}"
