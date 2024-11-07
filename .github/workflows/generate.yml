@@ -1,10 +1,12 @@
 name: generate words
 
 on:
+  repository_dispatch:
+    types: [zapier-triggered]
   workflow_dispatch:
 
 jobs:
-  refreshwords:
+  updateeventmap:
     runs-on: ubuntu-latest
     steps:
       - name: checkout repo content
