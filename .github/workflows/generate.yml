@@ -24,3 +24,7 @@ jobs:
           git add .
           git commit -m "Auto event update"
           git push
+        env:
+          auth_url: ${{ secrets.AUTH_URL }}
+          activites_url: ${{ secrets.ACTIVITIES_URL }}
+          payload: ${{ secrets.PAYLOAD }}
