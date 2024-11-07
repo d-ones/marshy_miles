@@ -5,6 +5,10 @@ on:
       - main
     paths:
       'src/**'
+  workflow_run:
+    workflows: ["generate map"]
+    types:
+      - completed
 jobs:
   deploy:
       runs-on: ubuntu-latest
