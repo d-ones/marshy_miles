@@ -26,5 +26,5 @@ jobs:
           git push
         env:
           auth_url: ${{ secrets.AUTH_URL }}
-          activites_url: ${{ secrets.ACTIVITIES_URL }}
+          activities_url: ${{ secrets.ACTIVITIES_URL }}
           payload: ${{ secrets.PAYLOAD }}
